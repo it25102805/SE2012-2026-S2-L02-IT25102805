@@ -1,42 +1,47 @@
+package models;
+
 public class Course {
     private String code;
     private String title;
-	
-	/** 
-	*Create New Course.
-	*@param course the Course Code
-	*@param tittle the Course Tittle
-	*/
 
-    public Course(String code, String title) {
+    /**Create New Course
+     * @param code the course code.
+     * @param title the course tittle.
+     */
+
+     public Course(String code, String title) {
         this.code = code;
         this.title = title;
     }
-	
-	/** 
-	*Return the Course Code.
-	*
-	*@return the Course Code
-	*/
-	public String getCode (){
-		return code;
-		
-	/** 
-	*Return the Tittle.
-	*
-	*@return the Tittle
-	*/
-    
-	public String gettittle (){
-		return tittle;
-		
-	/** 
-	*Return the Course Details.
-	*
-	*@return the Course Details
-	*/
-	public String toString() {
-		return code +" -" + tittle;
-	}
-		
+
+    /** Return the Course Code
+     *
+     * @return Course Code
+     */
+
+    public String getCode (){
+
+        return code;
+    }
+
+    /** Return the Course Tittle
+     *
+     * @return Course Tittle
+     */
+
+    public String getTitle () {
+
+        return title;
+    }
+
+    /** Return the formatted Corse code and tittle
+     *
+     * @return formatted course String
+     */
+
+    public String toString () {
+
+        return "Course Code : " + code + " Course tittle : " + title;
+    }
+
 }
